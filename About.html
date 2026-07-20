@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light custom-nav shadow-lg">
+        <div class="container-fluid align">
+            <a class="navbar-brand" href="# style="position: absolute; top: 5px; left: 15px>
+                <img src="Rune Factory 4.png" alt="logo"width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link"aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active"  href="About.html">About</a>
+                <a class="nav-link" href="blog.html">Blog</a>
+            </div>
+            </div>
+        </div>
+</nav>
+
+<main class="about-page-wrapper">
+  <div class="page-content">
+    <div class="about-card-overlay">
+      
+      <div class="about-header">
+        <h1>Rune Factory 4 Special</h1>
+        <p class="subtitle">Marks the return of the beloved entry in the popular STORY OF SEASONS spinoff series.</p>
+      </div>
+      
+      <div class="about-body">
+        <p>Combines farming with dungeon adventuring, as the series makes its debut on Nintendo Switch and Steam with upgraded HD graphics, and additional cut-scenes. In this standalone story, players choose to play as a male or female hero and will encounter a diverse cast of potential suitors and other loveable townsfolk. As the newly appointed prince or princess, you can fulfill your royal duties by issuing ordinances to help the town prosper, or take a more rural approach to governing by raising your own fruits and vegetables and helping townsfolk.</p>
+        <p>Developed by Neverland, back then the studio went bankrupt just months after the game's release in late 2013. Fortunately, publisher Marvelous rescued the development team, keeping the series alive for future entries</p>
+      </div>
+
+    </div>
+    
+  </div>
+</main>
+
+<section class="gallery-section">
+  <div class="gallery-container">
+    <h2 class="gallery-title">Gallery</h2>
+    
+    <div class="gallery-grid">
+      <!-- Image 1 -->
+      <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Forrest.png" alt="Gallery Image 1">
+      </div>
+      <!-- Image 2 -->
+      <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Town.png" alt="Gallery Image 2">
+      </div>
+
+      <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Protag.png" alt="Gallery Image 3">
+      </div>
+    
+      <div class="gallery-item"onclick="openPreview(this)">
+        <img src="Bachelors.png" alt="Gallery Image 4">
+      </div>
+    
+      <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Bachelorettes.png" alt="Gallery Image 5">
+      </div>
+     
+      <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Venti.png" alt="Gallery Image 6">
+      </div>
+
+       <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Vishnal.png" alt="Gallery Image 7">
+      </div>
+
+       <div class="gallery-item" onclick="openPreview(this)">
+        <img src="Archival Edition.png" alt="Gallery Image 8">
+      </div>
+    </div>
+    
+<dialog id="preview-modal" onclick="if(event.target === this) this.close()">
+  <div class="modal-content">
+     <button class="close-btn" onclick="document.getElementById('preview-modal').close()">&times;</button>
+     <img id="modal-img" src="" alt="Preview">
+  </div>
+</dialog>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-disclaimer">
+      &copy; 2026 Non-Commercial Project Website for finals. All rights go to their respective owners.
+    </p>
+    
+    <div class="footer-links">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">About Project</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function openPreview(element) {
+    const imageSrc = element.querySelector('img').src;
+    document.getElementById('modal-img').src = imageSrc;
+    document.getElementById('preview-modal').showModal();
+  }
+</script>
+</body>
+</html>
